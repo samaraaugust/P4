@@ -1,3 +1,194 @@
-*{
-    background-color: #b8daff;
+.row {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.carePart {
+    width: 1200px;
+    margin: auto;
+    height: 750px;
+}
+
+.contactPage {
+    display: flex;
+    flex-direction: column;
+}
+.contactPage h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contactMain {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+    min-height: 600px;
+}
+
+.contactF {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 300px;
+}
+
+.indivForm {
+    margin-bottom: 10px;
+}
+
+.contactDes img {
+    width: 300px;
+    border: 2px solid black;
+}
+nav {
+    background-color: #007bff;
+}
+
+.footerPart {
+    background-color: #20c997;
+}
+.carePart img {
+    height: 700px;
+}
+
+.homeSec {
+    padding-top: 20px;
+    background-color: #F5FFFA;
+}
+.homePic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.indivPic {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    /*border: 1px solid black;*/
+    border-radius: 6px;
+    width: auto;
+}
+
+.indivPic:hover {
+    box-shadow: 0 8px 16px 0 rgb(255, 174, 0);
+}
+
+.indivPic h1 {
+    text-align: center;
+}
+
+.indivPic img {
+    padding-bottom: 10px;
+    width: 180px;
+}
+
+.advenPage {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #F5FFFA;
+}
+
+.adventurePart {
+    background-color: #F5FFFA;
+}
+.flexCol {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#advenH {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.colshape {
+    display: flex;
+    justify-content: center;
+}
+
+.cardShape {
+    min-width: 150px;
+    min-height: 430px;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardShape h5 {
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 20px;
+    max-height: 40px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: -webkit-center;
+}
+
+.cardShape img {
+    border: 3px solid black;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.cardBodyS {
+    display: flex;
+    flex-direction: column;
+}
+
+/*.cardContent{*/
+/*    background-color: #0c5460;*/
+/*}*/
+
+.cardBodyM {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    margin: auto;
+    max-width: 700px;
+}
+
+.cardBodyM img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.cardBodyM h1 {
+    /*background-color: #004e97;*/
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cardBodyM h2 {
+    /*background-color: #007bff;*/
+    margin-bottom: 20px;
+}
+
+.cardBodyM h4 {
+    /*background-color: #155724;*/
+    margin-bottom: 20px;
+}
+
+.cardBodyM p {
+    /*background-color: #856404;*/
+    text-align: center;
+    font-size: 20px;
 }

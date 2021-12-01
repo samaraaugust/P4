@@ -8,41 +8,106 @@
     <title>Books</title>
 </head>
 <body>
-    <div class="container-fluid" id="mainPart">
+    <div class="homePage">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="./index.html">Home</a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Romance<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Adventure<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Fantasy<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Sci-Fi<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Favorites<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Contact Form
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Page 1</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Page 2</a>
-                        </div>
-                    </li>
-                </ul>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="images/homeIcon.png" alt="home page icon" width="40px" height="40px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./Components/romance.html">Romance</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./Components/adventure.html">Adventure</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./Components/fantasy.html">Fantasy</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./Components/science.html">Sci-Fi</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About Me</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./Components/contact.html">Contact Form</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="./Components/favorites.html">Favorites</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <h1>My First Bootstrap Page</h1>
-    </div>
 
+        <div class="container-fluid" id="mainPart">
+            <div class="homeSec">
+                <h1 style="text-align: center; margin-bottom: 30px; font-size: 50px;">My Book Suggestions</h1>
+                <div id="carouselExampleFade" class="carousel slide carePart" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/enderCare.jpg" class="d-block w-100" alt="Enders Game book cover wallpaper">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/lotrCare.jpg" class="d-block w-100" alt="the lord of the rings book cover wallpaper">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/wheelCare.jpg" class="d-block w-100" alt="the wheel of time book cover wallpaper">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/wayCare.jpg" class="d-block w-100" alt="the way of kings book cover wallpaper">
+                        </div>
+    <!--                    <div class="carousel-item">-->
+    <!--                        <img src="images/gotCare2.jpg" class="d-block w-100" alt="game of thrones book cover wallpaper">-->
+    <!--                    </div>-->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+    <!--            -->
+    <!--            <div class="mt-4 p-5 bg-primary text-white rounded">-->
+    <!--                <h1>My Favorite Books</h1>-->
+    <!--                <img src="images/bookIcon.png" alt="book icon">-->
+    <!--            </div>-->
+                <h1 style="text-align: center; margin-bottom: 30px; font-size: 50px;">My Favorite Genres</h1>
+                <div class="container homePic">
+                    <div class="row">
+                        <div class="col indivPic">
+                            <img src="images/map.png" alt="picture of a map">
+                            <h1>Adventure</h1>
+                        </div>
+                        <div class="col indivPic">
+                            <img src="images/wand.png" alt="picture of a wand">
+                            <h1>Fantasy</h1>
+                        </div>
+                        <div class="col indivPic">
+                            <img src="images/heart.png" alt="picture of a heart">
+                            <h1>Romance</h1>
+                        </div>
+                        <div class="col indivPic">
+                            <img src="images/robot2.png" alt="picture of a robot">
+                            <h1>Sci-Fi</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer font-small blue footerPart">
+
+            <div class="footer-copyright text-center py-3">© 2021 Copyright. Terms of Service. Privacy Statement.
+            </div>
+
+        </footer>
+    </div>
 </body>
 </html>
